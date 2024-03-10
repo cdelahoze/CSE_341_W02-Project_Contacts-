@@ -1,0 +1,32 @@
+###
+POST http://localhost:8080/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname": "Yustin",
+    "lastname": "De La Hoz",
+    "email": "ydelahozv@email.com",
+    "favoriteColor": "Yellow",
+    "birthday": "February 2"
+}
+
+###
+GET http://localhost:8080/api/users HTTP/1.1
+
+###
+GET http://localhost:8080/api/users/65ecf2d217a3718f34398e02 HTTP/1.1
+
+###
+PUT http://localhost:8080/api/users/65ecf47417a3718f34398e19 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname" : "Mariana",
+    "lastname": "Metzker",
+    "email": "ma_metzker@email.com",
+    "favoriteColor" : "Violet", 
+    "birthday": "Jun 16" 
+}
+
+###
+DELETE http://localhost:8080/api/users/65ecf31d17a3718f34398e08 HTTP/1.1
